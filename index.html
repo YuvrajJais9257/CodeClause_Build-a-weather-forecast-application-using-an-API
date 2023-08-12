@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Whisper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="icon" href="clouds-and-sun.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    12 : 30
+                    <span id="am-pm">
+                        PM
+                    </span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+                <div class="card current-info" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Weather</h5>
+                        <div class="others" id="current-weather-items">
+                            <div class="weather-items">
+                                <div class="weather-item">
+                                    <div class="card-subtitle">Humidity</div>
+                                    <div class="card-text" id="humidity">95.2%</div>
+                                </div>
+                                <div class="weather-item">
+                                    <div class="card-subtitle">Pressure</div>
+                                    <div class="card-text" id="pressure">121</div>
+                                </div>
+                                <div class="weather-item">
+                                    <div class="card-subtitle">Wind</div>
+                                    <div class="card-text" id="wind">222</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="future-forecast">
+                    <div class="today" id="current-temp">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="other">
+                            <div class="day">Monday</div>
+                            <div class="temp">Day 25.6&#176;C</div>
+                            <div class="temp">Night 35.6&#176;C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="future-forecast">
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Tue</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                            <div class="temp">Night 25.6&#176;</div>
+                            <div class="temp">Day 35.6&#176;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="future-forecast">
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Wed</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                            <div class="temp">Night 25.6&#176;</div>
+                            <div class="temp">Day 35.6&#176;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="future-forecast">
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Thu</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                            <div class="temp">Night 25.6&#176;</div>
+                            <div class="temp">Day 35.6&#176;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="future-forecast">
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Fri</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                            <div class="temp">Night 25.6&#176;</div>
+                            <div class="temp">Day 35.6&#176;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="future-forecast">
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Sat</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                            <div class="temp">Night 25.6&#176;</div>
+                            <div class="temp">Day 35.6&#176;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

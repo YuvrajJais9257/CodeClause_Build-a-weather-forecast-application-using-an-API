@@ -1,0 +1,232 @@
+/* Reset some default styles */
+body, html, div, h1, h2, h3, h4, h5, h6, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set a background color */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/cloud-blue-sky_1232-3108.jpg?w=900&t=st=1691643556~exp=1691644156~hmac=09a4042893b5b9dfb769e4d01ade7e876bb181e38408b228ef63db2cc5918108');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container {
+    padding: 10px;
+    width: 50%;
+    margin: 20px;
+}
+
+
+
+.current-info {
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #0000001a;
+    margin-bottom: 20px;
+}
+
+.date-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.place-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.date {
+    font-size: 18px;
+    color: #666;
+}
+
+.time {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+
+.time-zone {
+    font-size: 16px;
+    color: #999;
+}
+
+.country {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%; 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.future-forecast {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.today {
+    display: flex;
+    align-items: center;
+}
+
+.w-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.day {
+    font-size: 18px;
+    color: #333;
+}
+
+.temp {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .current-info, .future-forecast {
+        flex-direction: column;
+    }
+    
+    .place-container {
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .carousel-item {
+        padding: 10px;
+    }
+}
+/* Add this additional media query */
+@media screen and (max-width: 576px) {
+    .current-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .date-container {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .time {
+        font-size: 30px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .country {
+        font-size: 20px;
+    }
+
+    .time-zone {
+        font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-subtitle {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .today {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .w-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+
+    .temp {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+}
