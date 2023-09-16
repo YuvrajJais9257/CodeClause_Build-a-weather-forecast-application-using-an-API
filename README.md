@@ -1,6 +1,11 @@
 # Weather Forecasting Web App
 
-![App Screenshot](screenshot.png)
+![App Screenshot](s1.png)
+![App Screenshot](s2.png)
+![App Screenshot](s3.png)
+![App Screenshot](s4.png)
+![App Screenshot](s5.png)
+![App Screenshot](s6.png)
 
 A simple web application that provides real-time weather forecasts for different locations. The app is built using HTML, CSS, JavaScript, Node.js, Express.js, Nodemon, and the OpenWeatherMap API.
 
@@ -16,7 +21,7 @@ A simple web application that provides real-time weather forecasts for different
 
 ## Demo
 
-You can see a live demo of the app here: [Live Demo](https://your-demo-url.com)
+You can see a live demo of the app here: [Live Demo](https://yuvrajjais9257.github.io/CodeClause_Build-a-weather-forecast-application-using-an-API/)
 
 ## Features
 
